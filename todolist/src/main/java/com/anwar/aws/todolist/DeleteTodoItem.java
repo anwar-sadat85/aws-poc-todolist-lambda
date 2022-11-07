@@ -27,6 +27,7 @@ public class DeleteTodoItem implements RequestStreamHandler {
 		dynamoDbClient = DynamoDbClient.builder()
                 .region(region)
                 .build();
+		
 	}
 	public void handleRequest(InputStream input, OutputStream output, Context context) throws IOException {
 		LambdaLogger logger = context.getLogger();
